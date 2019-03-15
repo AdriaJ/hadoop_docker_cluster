@@ -16,6 +16,7 @@ docker run -itd --net=hadoop \
                 -p 8088:8088 \
 		-p 7077:7077 \
 		-p 16010:16010 \
+		-p 2019:2019 \
                 --name head \
                 --hostname head \
 		adriaj/hadoop_head
@@ -47,4 +48,5 @@ masterIp=`docker inspect -f "{{ .NetworkSettings.Networks.hadoop.IPAddress }}" h
 
 echo "Hadoop info @ head : http://$masterIp:8088/cluster"
 echo "DFS Health @ head  : http://$masterIp:9870/dfshealth.html"
+echo "You can start jupyter server and use jupyter notebook on port 2019 with the command 'jupyter notebook --ip=0.0.0.0 --port=2019'"
 
