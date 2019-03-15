@@ -22,3 +22,4 @@ This repo contains the files to build and deploy hadoop cluster on Docker contai
 [How to set up a regular Hadoop cluster] (https://www.linode.com/docs/databases/hadoop/how-to-install-and-set-up-hadoop-cluster/)  
 [Set up Hadoop cluster on ec2 instances] (https://medium.com/@jeevananandanne/setup-4-node-hadoop-cluster-on-aws-ec2-instances-1c1eeb4453bd)
 
+PS : some non necessary or useless files/lines may still be present in the repo, due to long investigation at creation time.
